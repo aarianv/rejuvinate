@@ -55,9 +55,9 @@ body {
     justify-content: space-between;
 }
 
-.controls p {
+.controls i {
     padding: 25px 0;
-    color: #38523f;
+    color: #53a96a;
     text-align: center;
     cursor: pointer;
     font-size: 1.3rem;
