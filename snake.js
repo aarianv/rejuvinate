@@ -1,7 +1,7 @@
 const playerGrid = document.querySelector(".grid");
 const pointsElement = document.querySelector(".points");
 const highscoreElement = document.querySelector(".highscore");
-const controls = document.querySelectorAll(".controls p");
+const controls = document.querySelectorAll(".controls i");
 
 let gameOver = false;
 let applesX, applesY;
