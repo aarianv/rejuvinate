@@ -10,6 +10,8 @@ let snakeBody = [];
 let velocityX = 0, velocityY = 0;
 let setIntervalId; 
 let points = 0;
+let goldenApplesX, goldenApplesY;
+let appleAmount = 0;
 
 let highscore = localStorage.getItem("highscore") || 0;
 highscoreElement.innerText = `high score: ${highscore}`;
@@ -52,7 +54,13 @@ const initGame = () => {
     if(snakeX === applesX && snakeY === applesY) {
         changeApplesPosition();
         snakeBody.push([applesX, applesY]);
+        appleAmount++;
         points++;
+
+        if (appleAmount % 4.4 == 0) {
+            snakeBody.push([goldenApplesX, goldenApplesY]);
+            points += 5
+        }
 
         highscore = points >= highscore ? points : highscore;
         localStorage.setItem('highscore', highscore);
