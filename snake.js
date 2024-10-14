@@ -1,6 +1,6 @@
 const playerGrid = document.querySelector(".grid");
 const pointsElement = document.querySelector(".points");
-const highscoreElement = document.querySelector(    ".highscore");
+const highscoreElement = document.querySelector(".highscore");
 const controls = document.querySelectorAll(".controls p");
 
 let gameOver = false;
@@ -55,9 +55,9 @@ const initGame = () => {
         points++;
 
         highscore = points >= highscore ? points : highscore;
-        localStorage.setItem('high score', highscore);
-        pointsElement.innerText = `points ${points}`;
-        highscoreElement.innerText = `high score ${highscore}`;
+        localStorage.setItem('highscore', highscore);
+        pointsElement.innerText = `points: ${points}`;
+        highscoreElement.innerText = `high score: ${highscore}`;
     }
 
     for (let i = snakeBody.length - 1; i > 0; i-- ) {
