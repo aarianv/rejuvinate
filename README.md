@@ -8,9 +8,9 @@ highscore saves automatically to device
 
 u can use arrow keys OR the premade buttons 
 
-[ next up: 
+power up every time the score is divisible by 4.4
 
-add power ups
+[ next up: 
 
 add color skins
 
